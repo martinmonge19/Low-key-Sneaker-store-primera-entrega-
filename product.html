@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" data-page="product">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalle | LOW‑KEY</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <nav>
+      <a href="index.html" data-match="home">Home</a>
+      <a href="adidas.html" data-match="adidas">Adidas</a>
+    </nav>
+    <a class="brand" href="index.html">
+      <img src="https://i.imgur.com/Wx3saQZ.png" alt="Low‑Key Logo"/>
+      <div>
+        <div class="title">LOW‑KEY</div>
+        <div class="subtitle">SNEAKER STORE</div>
+      </div>
+    </a>
+    <nav>
+      <a href="puma.html" data-match="puma">Puma</a>
+      <a href="contacto.html" data-match="contacto">Contactanos</a>
+      <span class="badge" data-cart-badge>0</span>
+    </nav>
+  </div>
+</header>
+
+<main class="container section product-page">
+  <div class="product-gallery">
+    <img data-p-img alt="Imagen del producto"/>
+  </div>
+  <div class="product-info">
+    <div class="brand-tag" data-p-brand>Marca</div>
+    <h1 data-p-name>Producto</h1>
+    <div style="margin-bottom:12px" data-p-color></div>
+    <div class="price" style="font-size:22px" data-p-price>$0</div>
+
+    <div class="opts">
+      <label>Talle
+        <select class="select" data-size>
+          <option>39</option><option selected>40</option><option>41</option><option>42</option>
+        </select>
+      </label>
+      <label>Cantidad
+        <input class="qty" type="number" min="1" max="5" step="1" value="1" data-qty />
+      </label>
+    </div>
+
+    <div class="actions">
+      <button class="btn" data-add>Añadir al carrito</button>
+      <a class="btn" href="javascript:history.back()">Volver</a>
+    </div>
+
+    <div style="margin-top:18px;color:var(--muted);font-size:14px">
+      <p>Entrega en 24–48 hs en CABA y GBA. 30 días de cambio. 6 cuotas sin interés.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container">© 2025 LOW‑KEY</div></footer>
+<div class="toast"></div>
+
+</body>
+</html>

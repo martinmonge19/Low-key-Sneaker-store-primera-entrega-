@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" data-page="cart">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrito | LOW-KEY</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <nav>
+      <a href="index.html" data-match="home">Home</a>
+      <a href="adidas.html" data-match="adidas">Adidas</a>
+    </nav>
+    <a class="brand" href="index.html">
+      <img src="images/logozapa.png" alt="Low-Key Logo"/>
+      <div>
+        <div class="title">LOW-KEY</div>
+        <div class="subtitle">SNEAKER STORE</div>
+      </div>
+    </a>
+    <nav>
+      <a href="puma.html" data-match="puma">Puma</a>
+      <a href="contacto.html" data-match="contacto">Contactanos</a>
+      <a href="cart.html" class="badge cart-btn" aria-label="items en carrito" data-cart-badge>0</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <h1>Tu carrito</h1>
+  <p class="muted" data-cart-empty>No hay productos en el carrito.</p>
+
+  <div class="grid" data-cart-list></div>
+
+  <div style="margin-top:18px;">
+    <strong>Total:</strong>
+    <span class="price" data-cart-total>$ 0</span>
+  </div>
+</main>
+
+<footer class="footer"><div class="container">© 2025 LOW-KEY</div></footer>
+<div class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -79,7 +79,7 @@ function productLink(p){
 
 function currency(v){
   try{
-    const n = Number(String(v).replace(/[^0-9.]/g,''));
+    const n = Number(String(v).replace(/[^0-9]/g,'')); // saco también los puntos
     return n.toLocaleString('es-AR', { style:'currency', currency:'ARS', maximumFractionDigits:0 });
   }catch(e){ return '$' + v; }
 }
